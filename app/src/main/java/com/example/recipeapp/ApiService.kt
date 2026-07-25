@@ -11,7 +11,8 @@ private val retrofit = Retrofit.Builder().baseUrl("https://www.themealdb.com/api
     val resipeService = retrofit.create(ApiService::class.java)
 
 interface ApiService{
-    @GET("categoryies.php")
+    @GET("categories.php")
+
     suspend fun getCategories():CategoriesResponse
 
 }
